@@ -1,6 +1,6 @@
 //
 // ======================================
-// PORTFÓLIO FRONT-END - LUCAS
+// PORTFÓLIO FRONT-END - LUCIANO
 // Engenharia de Software - Unicesumar
 // ======================================
 //
