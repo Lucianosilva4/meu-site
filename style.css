@@ -1,0 +1,299 @@
+/* =====================================================
+   PORTFÓLIO FRONT-END
+   Autor: Lucas
+   Curso: Engenharia de Software - Unicesumar
+   Arquivo: style.css
+===================================================== */
+
+/* ===== CONFIGURAÇÕES GERAIS ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ===== CABEÇALHO ===== */
+
+header{
+    background:#333;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    margin-bottom:15px;
+}
+
+/* ===== MENU ===== */
+
+nav{
+    margin-top:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#00bfff;
+}
+
+.ativo{
+    color:#00bfff;
+}
+
+/* ===== CONTEÚDO ===== */
+
+main{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+section{
+    background:white;
+    padding:30px;
+    margin-bottom:30px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#222;
+}
+
+section p{
+    text-align:justify;
+    margin-bottom:20px;
+}
+
+/* ===== LISTAS ===== */
+
+ul{
+    margin-left:25px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+/* ===== PROJETOS ===== */
+
+.projetos{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+    margin-top:30px;
+
+}
+
+.projeto{
+
+    background:white;
+
+    border-radius:10px;
+
+    padding:25px;
+
+    box-shadow:0 3px 12px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.projeto:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.projeto h3{
+
+    margin-bottom:15px;
+
+}
+
+.projeto p{
+
+    margin-bottom:15px;
+
+}
+
+/* ===== BOTÕES ===== */
+
+button,
+.btn{
+
+    display:inline-block;
+
+    background:#333;
+
+    color:white;
+
+    border:none;
+
+    text-decoration:none;
+
+    padding:12px 20px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-size:16px;
+
+}
+
+button:hover,
+.btn:hover{
+
+    background:#00bfff;
+
+}
+
+/* ===== FORMULÁRIO ===== */
+
+form{
+
+    max-width:600px;
+
+    margin:auto;
+
+}
+
+input,
+textarea{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:6px;
+
+    font-size:16px;
+
+}
+
+textarea{
+
+    resize:vertical;
+
+    min-height:150px;
+
+}
+
+#erro{
+
+    margin-top:15px;
+
+    font-weight:bold;
+
+}
+
+/* ===== BOTÃO TOPO ===== */
+
+#btnTopo{
+
+    background:#333;
+
+    color:white;
+
+    border:none;
+
+    border-radius:50px;
+
+    padding:12px 18px;
+
+    font-size:14px;
+
+    box-shadow:0 3px 8px rgba(0,0,0,.3);
+
+}
+
+#btnTopo:hover{
+
+    background:#00bfff;
+
+}
+
+/* ===== RODAPÉ ===== */
+
+footer{
+
+    background:#333;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
+@media(max-width:768px){
+
+    nav a{
+
+        display:block;
+
+        margin:12px 0;
+
+    }
+
+    section{
+
+        padding:20px;
+
+    }
+
+    h2{
+
+        font-size:26px;
+
+    }
+
+    .projeto{
+
+        text-align:center;
+
+    }
+
+    .btn,
+    button{
+
+        width:100%;
+
+        margin-top:10px;
+
+    }
+
+}
