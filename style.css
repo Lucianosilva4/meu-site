@@ -64,13 +64,13 @@ nav a:hover{
 main{
     max-width:1200px;
     margin:auto;
-    padding:40px 20px;
+    padding:30px 20px;
 }
 
 section{
     background:white;
-    padding:30px;
-    margin-bottom:30px;
+    padding:25px;
+    margin-bottom:20px;
     border-radius:10px;
     box-shadow:0 4px 10px rgba(0,0,0,.1);
 }
@@ -81,7 +81,8 @@ section h2{
     color:#222;
 }
 
-section p{
+/* Apenas os parágrafos diretamente dentro da section ficam justificados */
+section > p{
     text-align:justify;
     margin-bottom:20px;
 }
@@ -104,9 +105,11 @@ li{
 
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 
-    gap:25px;
+    gap:20px;
 
-    margin-top:30px;
+    margin-top:20px;
+
+    align-items:start;
 
 }
 
@@ -121,6 +124,10 @@ li{
     box-shadow:0 3px 12px rgba(0,0,0,.15);
 
     transition:.3s;
+
+    display:flex;
+
+    flex-direction:column;
 
 }
 
@@ -138,7 +145,15 @@ li{
 
 .projeto p{
 
+    text-align:left;
+
     margin-bottom:15px;
+
+}
+
+.projeto .btn{
+
+    margin-top:auto;
 
 }
 
@@ -198,6 +213,8 @@ textarea{
     border-radius:6px;
 
     font-size:16px;
+
+    margin-bottom:15px;
 
 }
 

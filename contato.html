@@ -5,9 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO básico -->
-  <meta name="description" content="Página de contato do portfólio de Luciano - estudante de Engenharia de Software na Unicesumar.">
-  <meta name="keywords" content="Contato, Portfólio, HTML, CSS, JavaScript, Unicesumar">
+  <meta name="description" content="Página de contato do portfólio de Luciano.">
+  <meta name="keywords" content="Contato, Portfólio, HTML, CSS, JavaScript">
   <meta name="author" content="Luciano">
 
   <title>Contato | Portfólio Luciano</title>
@@ -30,51 +29,58 @@
 
 <main>
 
-  <section>
+<section>
 
-    <h2>Entre em Contato</h2>
+<h2>Entre em Contato</h2>
 
-    <p>
-      Se você quiser falar comigo, enviar sugestões ou oportunidades, preencha o formulário abaixo.
-    </p>
+<p>
+Se você quiser falar comigo, enviar sugestões ou oportunidades,
+preencha o formulário abaixo.
+</p>
 
-    <form id="formContato">
+<form action="https://formsubmit.co/luciano_lucas4@outlook.com" method="POST">
 
-      <input 
-        type="text" 
-        id="nome" 
+    <input
+        type="text"
+        name="Nome"
         placeholder="Seu nome"
-      >
+        required>
 
-      <br><br>
+    <br><br>
 
-      <input 
-        type="email" 
-        id="email" 
+    <input
+        type="email"
+        name="Email"
         placeholder="Seu e-mail"
-      >
+        required>
 
-      <br><br>
+    <br><br>
 
-      <textarea 
-        id="mensagem" 
+    <textarea
+        name="Mensagem"
         placeholder="Sua mensagem"
-      ></textarea>
+        required></textarea>
 
-      <br><br>
+    <br><br>
 
-      <button type="submit">Enviar Mensagem</button>
+    <!-- Evita spam -->
+    <input type="hidden" name="_captcha" value="false">
 
-      <p id="erro"></p>
+    <!-- Redireciona após o envio -->
+    <input type="hidden" name="_next" value="https://lucianosilva4.github.io/meu-site/contato.html">
 
-    </form>
+    <button type="submit">
+        Enviar Mensagem
+    </button>
 
-  </section>
+</form>
+
+</section>
 
 </main>
 
 <footer>
-  <p>&copy; 2026 Luciano- Portfólio Front-End</p>
+<p>&copy; 2026 Luciano - Portfólio Front-End</p>
 </footer>
 
 <script src="script.js"></script>
